@@ -1,0 +1,7 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Lindungi file konfigurasi dan file SQL/teks cadangan jika ada
+<FilesMatch "^(config\.php|config\.example\.php|.*\.(sql|log|bak))$">
+  Require all denied
+</FilesMatch>
